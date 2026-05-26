@@ -17,6 +17,7 @@ Repositório criado para organizar meus estudos de lógica de programação e al
 * [#217 - Contains Duplicate](./desafios/217-contains-duplicate.js)
 * [#242 - Valid Anagram](./desafios/242-valid-anagram.js)
 * [#283 - Move Zeroes](./desafios/283-move-zeroes.js)
+* [#344 - Reverse String](./desafios/344-reverse-string.js)
 * [#2798 - Number of Employees Who Met the Target](./desafios/2798-employees-target.js)
 
 ## Como rodar os arquivos
