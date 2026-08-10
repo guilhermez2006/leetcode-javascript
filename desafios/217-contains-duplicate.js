@@ -1,10 +1,15 @@
-function containsDuplicate(nums) {
-    for (let i = 0; i < nums.length; i++) {
-        for (let j = i + 1; j < nums.length; j++) {
-            if (nums[i] == nums[j]) {
-                return true; // duplicata encontrada — early return
-            }
-        }
+let arrNums = [1, 3, 4, 2, 7, 3];
+
+function containsDuplicate(n) {
+  let mapNums = {};
+
+  for (let i = 0; i < n.length; i++) {
+    if (mapNums[n[i]] !== undefined) {
+      return true;
     }
-    return false; // early return: só alcançado após checar todos os pares
+    mapNums[n[i]] = true;
+  }
+  return false;
 }
+
+console.log(containsDuplicate(arrNums));
