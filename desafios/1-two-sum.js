@@ -1,10 +1,14 @@
+let arrNums = [1, 2, 3, 7, 8];
+let target = 9;
+
 function twoSum(nums, target) {
-    for (let i = 0; i < nums.length; i++) {
-        for (let j = i + 1; j < nums.length; j++) {
-            if (nums[i] + nums[j] == target) {
-                return [i, j]; // par encontrado — early return
-            }
-        }
+  let mapa = {};
+  for (let i = 0; i < nums.length; i++) {
+    let precisoDe = target - nums[i];
+    if (mapa[precisoDe] !== undefined) {
+      return [mapa[precisoDe], i];
     }
-    return []; // early return: só alcançado se nenhum par somar o target
+    mapa[nums[i]] = i;
+  }
 }
+console.log(twoSum(arrNums, target));
